@@ -73,5 +73,5 @@ For a complete list of dependencies, refer to the `requirements.txt` file.
 ![Screenshot from 2023-07-09 01-11-52](https://github.com/Kruthikesh/Ethos/assets/98465500/5d90df59-810a-40d6-a233-1a088f7a7472)
 ![Screenshot from 2023-07-09 01-11-59](https://github.com/Kruthikesh/Ethos/assets/98465500/56b996d6-83bc-4810-8fcf-f0d1fa0bada2)
 ![Screenshot from 2023-07-09 01-12-30](https://github.com/Kruthikesh/Ethos/assets/98465500/05e3cf6a-ab7a-4969-946f-51e10d3fdd08)
-
+![Screenshot from 2023-07-09 01-20-46](https://github.com/Kruthikesh/Ethos/assets/98465500/f8090b6b-f736-4776-8677-e17c9dc352d0)
 
