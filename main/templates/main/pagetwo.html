@@ -274,8 +274,9 @@
     const bar = document.getElementById('bar')
     const dots = document.getElementsByClassName('dotss')
     const curr = document.getElementById('curr')
-    onload = () => {
+    onload = () =>setTimeout(()=>{
       var t = audio.duration
+      console.log(t)
       ss = Math.floor(t + 0.5) % 60
       mm = Math.floor(Math.floor(t + 0.5) / 60)
       if (ss <= 9) ss = '0' + ss
@@ -284,7 +285,7 @@
       for (var i = 0; i < dots.length; i++) {
         dots[i].style.left = 'calc(' + ((parseInt(dots[i].dataset.time.split(':')[0]) * 60 + parseInt(dots[i].dataset.time.split(':')[1])) / audio.duration) * 100 + '% - 8.7px )'
       }
-    }
+    },500)
     var ss, mm
     audio.ontimeupdate = () => {
       var t = audio.currentTime

@@ -1,7 +1,7 @@
 from django.urls import path
 from . import views
 from django.contrib.auth import views as auth_views
-
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 urlpatterns = [
     path('', views.Login, name = 'login'),
     path('homepage/',views.Home,name='Home'),
@@ -20,3 +20,5 @@ urlpatterns = [
     path('reset/<uidb64>/<token>/',auth_views.PasswordResetConfirmView.as_view(template_name = "main/password_reset_form.html"),name="password_reset_confirm"),
     path('reset_password_complete/',auth_views.PasswordResetCompleteView.as_view(template_name = "main/password_done.html"),name="password_reset_complete"),
 ]
+
+urlpatterns+=staticfiles_urlpatterns()

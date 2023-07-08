@@ -38,10 +38,10 @@ def download(link,request):
         command = ['yt-dlp', '-x', '--audio-format', 'mp3', '-o', output_format, link]
         videos = subprocess.run(command, capture_output=True)
     if videos.returncode in [0,1]:
-            vars=subprocess.run(['mv','ethos/'+audio_file+'.webm','~/main/static/main/audio'])
+            vars=subprocess.run(['mv','ethos/'+audio_file+'.mp3','~/main/static/main/audio'])
             print(vars.returncode)
             # path='main/static/main/audio/'
-            filename=audio_file+'.webm'
+            filename=audio_file+'.mp3'
             path='main/audio/'
             tempath=path +filename
             saveaudio=Audio()
